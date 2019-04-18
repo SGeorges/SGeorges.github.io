@@ -2,103 +2,92 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Basic CSS Example</title>
+    <meta charset="UTF-8">
+    <title>Stefano Georges Portfolio About</title>
 
-  <!-- Introducing the Style Tag! -->
-  <!-- ========================== -->
+    <!-- Needed to reset formatting -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- This link connects to my CSS file. -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  <!-- Now you can customize the look of your sites. Each rule in the style tag changes the appearance of its associated element (notice how each rule names an element from the HTML body). -->
-  <style>
-    /*
-			NOTE: Commenting is a bit different in CSS. 
-		  They start with forward-slash + asterisk 
-		  and end with back-slash + asterisk.
-		  */
-    /* h1 heading tag */
-    
-    h1 {
-      /* Put a 15-pixel margin at the bottom of the heading. */
-      margin-bottom: 15px;
-      /* Change the size of your font to 60 pixels high. */
-      font-size: 60px;
-      /* This will color the heading font white. */
-      color: white;
-      /* Align the text to the center of its enclosing element (e.g. div). */
-      text-align: center;
-      /* Underline the text. */
-      text-decoration: underline;
-      /* The background of the heading element will now be black. */
-      background-color: black;
-    }
-    /* h2 heading tags */
-    
-    h2 {
-      /* Put a 15-pixel margin at the top of all h2 headings. */
-      margin-top: 15px;
-      margin-bottom: 15px;
-      font-size: 40px;
-      text-align: center;
-    }
-    /* h3 heading tags */
-    
-    h3 {
-      margin-top: 15px;
-      font-size: 20px;
-      text-align: center;
-    }
-    /* All img tags */
-    
-    img {
-      /* 
-				Center a block element in the middle of its enclosing tag.
-				When you use the "auto" rule on both left and right margins, 
-				your browser will do the math necessary to center a block element.
-				*/
-      margin-left: auto;
-      margin-right: auto;
-      /* Block display (more on this later) */
-      display: block;
-    }
-    /* All p tags */
-    
-    p {
-      text-align: center;
-      font-size: 20px;
-      /* Bold the text. */
-      font-weight: bold;
-    }
-    /* All unordered list tags */
-    
-    ul {
-      text-align: center;
-      font-size: 35px;
-      /* Give an element a solid border. */
-      border-style: solid;
-      /* Render the border 5 pixels thick. */
-      border-width: 5px;
-      /* Include bullets in the content flow. */
-      /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
-      list-style-position: inside;
-    }
-  </style>
+
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom-0 border-dark">
+            <div class="nav navbar-nav ml-20 w-50 justify-content-start"><h1>Stefano Georges</h1></div>
+            <div class="nav navbar-nav ml-auto justify-content-end">
+                <a href="index.html">About</a> &nbsp|&nbsp <a href="portfolio.html">Portfolio</a> &nbsp|&nbsp <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-  <h1>Awesome Header</h1>
-  <h2>Smaller Awesome Header</h2>
-  <h3>Even Smaller Header</h3>
+    <div class="container mt-5 mb-5">
+            <div class="row">
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur unde aut dolores odio hic, accusamus recusandae ipsam illum enim voluptatibus obcaecati totam tempora eum quod sapiente. Corporis, quidem, culpa?</p>
-  <img src="https://i.kym-cdn.com/entries/icons/original/000/028/596/dsmGaKWMeHXe9QuJtq_ys30PNfTGnMsRuHuo_MUzGCg.jpg" alt="Awesome" width="25%">
+                <div class="col">
+                    <div class="card mb-3" style="max-width: 920px;">
+                        <div class="row no gutters">
+                            <div class="col">
+                                <h2 class="card-title">About</h2>
+                            </div>
+                        </div>
 
-  <h3>Menu Links</h3>
-  <ul>
-    <li><a href="https://www.google.com">Google</a></li>
-    <li><a href="https://www.facebook.com">Facebook</a></li>
-    <li><a href="https://www.twitter.com">Twitter</a></li>
-  </ul>
+                        <div class="row no-gutters">
+                            <div class="card-body">
+                            <div class="col-md-4">
+                                <img src="assets/images/index1.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md">
+                                    <p class="card-text bodyText">Hello World! I'm Stefano,</p>
+                                    <br>
+                                        
+                                    <p class="card-text bodyText">
+                                        I'm an aspiring web designer looking to make a start from humble (non-existant) beginnings. After
+                                        going through my developmental years (18-23 for me, late bloomer) under the misconception more difficult
+                                        meant better for me, I came out with a BS in Chemical Engineering at Drexel University. The road was 
+                                        challenging but once I recieved my degree everything worked out well....
+                                    </p>
+                                    <br>
+                            </div>
+                            </div>    
+                        </div>
+                        
+                        <div class="row no-gutters">
+                            <div class="card-body">
+                                <div class="col-md">
+                                    <p class="card-text bodyText">
+                                        ... is not what happened. In a field where I felt my creativity and freedom where restricted I decided
+                                        to go for broke and change my career pathway to something I personally enjoy. Even though I can't stress 
+                                        how much I loved working outside in the extreme heat or cold, fighting off ticks, chiggers, bees, spiders,
+                                        and not being able to do anything to please my client because the fact they hired me means they're already
+                                        pouring money in an undesired cost, I wanted to do something I could enjoy. 
+                                    </p>
+                                    <br>
+                            
+                                    <p class="card-text bodyText">
+                                        So here I am. Thanks for checking out my profile!
+                                    </p>       
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+
+    <footer class="footer fixed-bottom">
+        <div class="container justify-content-center border-0 border-danger">
+            <span class="text-muted">
+                    Copyright&copy;
+            </span>
+        </div>
+    </footer>
+
 
 </body>
 

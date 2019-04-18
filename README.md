@@ -1,1 +1,2 @@
-# SGeorges.github.io
+# Bootstrap-Portfolio
+02-Responsiveness Assignment 
