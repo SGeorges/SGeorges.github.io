@@ -28,34 +28,35 @@
     </header>
 
     <div class="container mt-5 mb-5">
-            <div class="row">
-
-            <div class="col">
-                <div class="card mb-3" style="max-width: 920px;">
-                    <div class="row no gutters">
-                        <div class="col">
-                            <h2 class="card-title">Contact</h2>
-                        </div>
-                    </div>
-
-                    <div class="p-3 row no-gutters">
-                        <label for="basic-url">Name</label>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="John Smith" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                        
-                        <label for="basic-url">Email</label>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        </div>
-                        
-                        <label for="basic-url">Message</label>
-                        <div class="input-group mb-3">
-                            <textarea class="form-control formMessage" aria-label="With textarea"></textarea>
-                        </div>
-                    </div>
+        <div class="card mb-3" style="max-width: 920px;">
+            <div class="row no gutters">
+                <div class="col-md-12">
+                    <h2 class="card-title">Contact</h2>
                 </div>
             </div>
+
+            <form action="https://formspree.io/stefano.a.georges@gmail.com" method="POST">
+                <div class= "p-3 row no-gutter">
+                    <div class= "col-md-12">
+                        <label for="basic-url">Name</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name= "name" placeholder="John Smith" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>        
+
+                        <label for="basic-url">Email</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name= "reply_to" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+
+                        <label for="basic-url">Message</label>
+                        <div class="input-group mb-3">
+                            <textarea class="form-control formMessage" name= "message" aria-label="With textarea"></textarea>
+                        </div>
+    
+                        <button class= "btn button" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 

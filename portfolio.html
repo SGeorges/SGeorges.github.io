@@ -12,6 +12,10 @@
     <!-- This link connects to my CSS file. -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -38,52 +42,152 @@
                         </div>
                     </div>
 
-                    <div class="p-3 row justify-content-md-center">
-                        <div class="col col-lg-3">
-                            <img class="img-fluid w-100 p-0" src="assets/images/portfolio1.jpg" alt="">
-                            <button class="btn bt n-default button w-100" onclick= "window.location.href= 'https://sgeorges.github.io/Word-Guess-Game/';" type="submit">Hangman</button>
-                        </div>
-                        <div class="col col-lg-3">
-                            <img class="img-fluid w-100 p-0" src="assets/images/portfolio2.jpg" alt="">
-                            <button class="btn bt n-default button w-100" onclick= "window.location.href= 'https://sgeorges.github.io/unit-4-game/';" type="submit">RPG Game</button>
-                        </div>
-                        <div class="col col-lg-3">
-                            <img class="img-fluid w-100 p-0" src="assets/images/portfolio5.jpg" alt="">
-                            <button class="btn bt n-default button w-100" onclick="window.location.href = 'https://github.com/WillMcNamara/Project2';" type="submit">Top Chef RPG</button>
-                        </div>
-                        <div class="col col-lg-3">
-                            <!-- Empty Column -->
+                    <div class="p-3 row">
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Hangman</h5>
+                                    <p class="card-text">Javascript hangman game with pre-defined words you need to guess. See how many you can guess in a row!</p>
+                                    <div class= "btn-group w-100 mt-auto" role= "group">
+                                        <button id="btn-hangman" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            HANGMAN
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-hangman">
+                                            <a href="https://sgeorges.github.io/Word-Guess-Game/" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/SGeorges/Word-Guess-Game" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
                         </div>
 
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Star Wars RPG </h5>
+                                    <p class="card-text">Star Wars themed RPG game on JQuery. Choose your faction and defeat all your enemies!</p>
+                                    <div class= "btn-group w-100  mt-auto" role= "group">
+                                        <button id="btn-starwars" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            STAR WARS RPG
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-starwars">
+                                            <a href="https://sgeorges.github.io/unit-4-game/" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/SGeorges/unit-4-game" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Top Chef RPG </h5>
+                                    <p class="card-text">Cooking themed game utilizing a MySQL database for character, npc, and world values. Can you stand the heat?</p>
+                                    <div class= "btn-group w-100  mt-auto" role= "group">
+                                        <button id="btn-topchef" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            TOP CHEF RPG
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-topchef">
+                                            <a href="#" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/WillMcNamara/Project2" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="p-3 row">
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Totally Trivia </h5>
+                                    <p class="card-text">Javascript Trivia game that asks you eight questions. See how you fare vs this challenge.</p>
+                                    <div class= "btn-group w-100  mt-auto" role= "group">
+                                        <button id="btn-trivia" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            TOTALLY TRIVIA
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-trivia">
+                                            <a href="https://sgeorges.github.io/TriviaGame/" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/SGeorges/TriviaGame" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">NYT Article</h5>
+                                    <p class="card-text">Access the New York Times API to recieve articles and pick out your favorites.</p>
+                                    <div class= "btn-group w-100  mt-auto" role= "group">
+                                        <button id="btn-nyt" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            NYT SEARCH
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-nyt">
+                                            <a href="https://sgeorges.github.io/NYT-Search/" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/SGeorges/TriviaGame" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+            
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Rock Paper Scissors</h5>
+                                    <p class="card-text">Multiplayer game of Rock, Paper, Scissors utilizing Firebase, supported by Google.</p>
+                                    <div class= "btn-group w-100  mt-auto" role= "group">
+                                        <button id="btn-rps" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            ROCK PAPER SCISSORS
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-rps">
+                                            <a href="https://sgeorges.github.io/RPS-Multiplayer/" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/SGeorges/TriviaGame" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
                     </div>
 
                     <div class="p-3 row justify-content-md-center">
-                        <div class="col col-lg-3">
-                            <img class="img-fluid w-100 p-0" src="assets/images/portfolio3.jpg" alt="">
-                            <button class="btn bt n-default button w-100" onclick= "window.location.href= 'https://sgeorges.github.io/TriviaGame/';" type="submit">Trivia Game</button>
-                        </div>
-                        <div class="col col-lg-3">
-                            <img class="img-fluid w-100 p-0" src="assets/images/portfolio4.jpg" alt="">
-                            <button class="btn bt n-default button w-100" onclick= "window.location.href= 'https://sgeorges.github.io/NYT-Search/';" type="submit">NYT Article Search</button>
-
-                        </div>
-                        <div class="col col-lg-6">
-                            <!-- Empty Column -->
-                        </div>
-                    </div>
-                    <div class="p-3 row justify-content-md-center">
-                        <div class="col col-lg-3">
-                            <img class="img-fluid w-100 p-0" src="assets/images/portfolio5.jpg" alt="">
-                            <button class="btn bt n-default button w-100" onclick="window.location.href = 'https://sgeorges.github.io/RPS-Multiplayer/';" type="submit">Rock Paper Scissors</button>
-                        </div>
-                        <div class="col col-lg-3">   
+                        <div class="col-md-4">
+                            <div class="card border border-danger h-100 mx-auto">
+                                <img src="./assets/images/portfolio5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Rock Paper Scissors</h5>
+                                    <p class="card-text">Multiplayer game of Rock, Paper, Scissors utilizing Firebase, supported by Google.</p>
+                                    <div class= "btn-group w-100  mt-auto" role= "group">
+                                        <button id="btn-rps" type= "button" class= "btn button dropdown-toggle" data-toggle= "dropdown" aria-haspopup= "true" aria-expanded= "false">
+                                            ROCK PAPER SCISSORS
+                                        </button> 
+                                        <div class= "dropdown-menu p-0 w-100" aria-labelledby= "btn-rps">
+                                            <a href="https://sgeorges.github.io/RPS-Multiplayer/" class="btn button w-100 mb-1">Link</a>
+                                            <a href="https://github.com/SGeorges/TriviaGame" class="btn button w-100">ReadMe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+        
+                        <div class="col-md-4">   
                             <!-- Empty Column  -->
                         </div>
-                        <div class="col col-lg-6">
+
+                        <div class="col-md-4">
                             <!-- Empty Column -->
                         </div>
                     </div>
-                    <br>
 
                 </div>
             </div>
